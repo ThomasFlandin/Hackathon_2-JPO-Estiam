@@ -1,0 +1,87 @@
+body,html{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#menu, #menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 129px;
+    background-color:#0099e6;
+}
+#menu {
+/* on centre le menu dans la page */
+    text-align: center;
+    padding-top: 15px;
+
+}
+#menu li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    background-color: #0099e6;
+    padding: 20px;
+    font-family:sans-serif;
+    font-size:25px;
+}
+
+/* Au survol des éléments menu */
+#menu a:hover {
+    color: white;
+    background-color: #0089d3;
+    color: yellow;
+}
+
+#menu ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+}
+
+#menu li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+    width: 229px;
+}
+
+footer {
+    position: relative;
+    top:80%;
+    font-family: sans-serif;
+    color:white;
+    height: 10%;
+    background-color:#00407f;
+}
+footer > p {
+    padding-top: 25px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+li > img {
+    width: 15%;
+
+}
+nav~div{
+    padding-top: 1px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    background-color: #00407f;
+    height: 30px;
+}
+div>p{
+    margin-top: 5px;
+    font-size: 18;
+    color: yellow;
+}

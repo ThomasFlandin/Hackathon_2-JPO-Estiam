@@ -3,22 +3,49 @@ body,html{
     padding: 0px;
     margin: 0px;
 }
-#menu, #menu ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    height: 129px;
-    background-color:#0099e6;
-}
-#menu {
-/* on centre le menu dans la page */
-    text-align: center;
-    padding-top: 15px;
 
+header
+{
+	height:150px;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	background-color:#0099e6;
 }
+
+header nav
+{
+    margin-left: 20vw;
+}
+
+header img
+{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+header > div:first-of-type
+{
+	display:flex;
+	flex-direction:row;
+}
+
+header > div:last-of-type
+{
+    background-color:#00407f;
+}
+
+header > div:last-of-type > p
+{
+    margin-left: 20px;
+}
+
 #menu li {
 /* on place les liens du menu horizontalement */
     display: inline-block;
+    margin: 0px 25px 0px 25px;
 }
 #menu ul li {
 /* on enlève ce comportement pour les liens du sous menu */
@@ -47,20 +74,21 @@ body,html{
 /* on cache les sous menus complètement sur la gauche */
     left: -999em;
     text-align: left;
+    margin-left: -65px;
 }
 
 #menu li:hover ul {
 /* Au survol des li du menu on replace les sous menus */
     left: auto;
-    width: 229px;
+    width: 250px;
 }
 
 footer {
     position: relative;
-    top:80%;
+    /*top:80%;*/
     font-family: sans-serif;
     color:white;
-    height: 10%;
+    height: 70px;
     background-color:#00407f;
 }
 footer > p {
@@ -80,8 +108,13 @@ nav~div{
     background-color: #00407f;
     height: 30px;
 }
-div>p{
-    margin-top: 5px;
+div>p
+{
     font-size: 18;
     color: yellow;
+}
+
+#Page, #Page p
+{
+	color:black;
 }

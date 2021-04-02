@@ -19,3 +19,4 @@ git push = permet d'envoyer le 'colis' vers les serveurs web de github<br />
 ### Pour créer une nouvelle branche:<br/><br/>
 
 git checkout -b nom_nouvelle_branche<br/>
+sd

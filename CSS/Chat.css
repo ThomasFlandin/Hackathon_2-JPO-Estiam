@@ -1,0 +1,82 @@
+nav > ul {
+    list-style-type: none;
+    
+    
+}    
+
+button {
+    
+    width: 200px;
+    height: 125px;
+    color: white;
+    background-color: #0099e6;
+    box-shadow: #0099e6;
+    border: none;
+    
+}
+button > li{
+    font-size: 180%;
+    
+    
+}
+.menu{
+    height: 701px;
+    width: 280px;
+    display: inline-flex;
+    background-color: #00407f;
+
+}
+
+.administration{
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+.pedagogie{
+    margin-bottom: 75px;
+}
+
+.vieetudiante {
+    
+}
+
+
+/* Chat containers */
+.container {
+    border: none;
+    background-color: #0099e6;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    color: #0099e6;
+    background-color: #ddd;
+    width: 500px;
+    display: block;
+    float: right;
+    margin-right: 20px;
+  }
+  
+  /* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .chat{
+      background-color:white;
+      height: 550px;
+      width: 1500px;
+      
+
+  }
+  div{
+    display: inline-block;
+  }
+  html{
+    background-color:  #00407f;
+}

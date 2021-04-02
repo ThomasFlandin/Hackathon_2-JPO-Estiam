@@ -80,7 +80,7 @@ button > li{
     display: block;
     float: right;
     margin-right: 20px;
-	align-self: end;
+	align-self: flex-end;
 }
 
 #Page .darker p

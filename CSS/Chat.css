@@ -20,16 +20,27 @@ button > li{
     
 }
 .menu{
-    height: 701px;
     width: 280px;
     display: inline-flex;
     background-color: #00407f;
 
 }
 
+.emetteur
+{
+	padding:0px;
+	margin:5px 0px 0px 0px;
+	font-size:0.8em;
+}
+
+.emetteur span
+{
+	color:#00407f;
+	font-weight:bold;
+}
+
 .administration{
     margin-bottom: 75px;
-    margin-top: 75px;
 }
 .pedagogie{
     margin-bottom: 75px;
@@ -40,25 +51,47 @@ button > li{
 }
 
 
+.menu ul
+{
+	padding-right: 50px;
+}
+
+#Page
+{
+	display:flex;
+	flex-direction:row;
+}
+
 /* Chat containers */
 .container {
     border: none;
     background-color: #0099e6;
     color: white;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0 5px 0px;
     width: 500px;
   }
-  
-  /* Darker chat container */
-  .darker {
-    color: #0099e6;
+ 
+/* Darker chat container */
+.darker 
+{
     background-color: #ddd;
     width: 500px;
     display: block;
     float: right;
     margin-right: 20px;
-  }
+	align-self: end;
+}
+
+#Page .darker p
+{
+	color: #0099e6;
+}
+
+#Page .lighter p
+{
+	color:white;
+}	
   
   /* Clear floats */
 .container::after {
@@ -67,16 +100,30 @@ button > li{
     display: table;
   }
 
-  .chat{
-      background-color:white;
-      height: 550px;
-      width: 1500px;
-      
+.chat{
+    background-color:white;
+    height: 500px;
+    width: 1500px;
+	  
+	display:flex;
+	flex-direction:column;
+}
 
-  }
-  div{
+.menu button
+{
+	transition:0.5s;
+}
+
+.menu button:hover
+{
+	color:yellow;
+	cursor:pointer;
+	transition:0.5s;
+}
+
+div{
     display: inline-block;
-  }
+}
   html{
     background-color:  #00407f;
 }
